@@ -310,7 +310,7 @@ pub fn new_full(
 			.spawn_essential_handle()
 			.spawn_blocking("pow", "pow_group", worker_task);
 
-		let threads = num_cpus::get();
+		let threads = 1;
 		for _ in 0..threads {
 			if let Some(keystore) = keystore_container.local_keystore() {
 				let worker = worker.clone();

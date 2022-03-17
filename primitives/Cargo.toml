@@ -10,5 +10,5 @@ edition = "2021"
 [dependencies.sp-core]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.1.0-dev'

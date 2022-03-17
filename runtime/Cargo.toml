@@ -35,7 +35,7 @@ version = '2.0.0-beta.2'
 
 [build-dependencies.substrate-wasm-builder]
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '5.0.0-dev'
 
 [dependencies.codec]
@@ -48,38 +48,38 @@ version = '2.0.0'
 default-features = false
 optional = true
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.frame-executive]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.frame-support]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.frame-system]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.frame-system-benchmarking]
 default-features = false
 optional = true
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.frame-system-rpc-runtime-api]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.hex-literal]
@@ -89,37 +89,37 @@ version = '0.3.1'
 [dependencies.pallet-balances]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.pallet-randomness-collective-flip]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.pallet-sudo]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.pallet-timestamp]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.pallet-transaction-payment]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.pallet-transaction-payment-rpc-runtime-api]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.scale-info]
@@ -130,67 +130,67 @@ version = '1.0'
 [dependencies.sp-api]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.sp-block-builder]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.sp-consensus-pow]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '0.10.0-dev'
 
 [dependencies.sp-core]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.1.0-dev'
 
 [dependencies.sp-inherents]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.sp-offchain]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.sp-runtime]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.1.0-dev'
 
 [dependencies.sp-session]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.sp-std]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.sp-transaction-pool]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [dependencies.sp-version]
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
-branch = 'play'
+branch = 'debugging'
 version = '4.0.0-dev'
 
 [features]
