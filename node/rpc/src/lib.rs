@@ -8,7 +8,7 @@ use jsonrpc_derive::rpc;
 use jsonrpc_pubsub::{
 	manager::SubscriptionManager, typed::Subscriber, PubSubMetadata, SubscriptionId,
 };
-use sc_client_api::{BlockchainEvents, StorageKey};
+use sc_client_api::{BlockchainEvents, StorageKey, StorageNotification};
 use sp_api::{BlockId, ProvideRuntimeApi, StateBackend};
 use sp_blockchain::HeaderBackend;
 use sp_core::H256;
@@ -138,27 +138,26 @@ where
 					return;
 				},
 			};
-		let stream =
-			stream.map(move |(_block, changes)| -> Result<RpcResult<Vec<friendly::Event>>, ()> {
-				let mut events = Vec::new();
-				for (_, _, data) in changes.iter() {
-					if let Some(sc_client_api::StorageData(data)) = data {
-						match <Vec<EventRecord<RuntimeEvent, H256>>>::decode(&mut data.as_slice()) {
-							Ok(records) => {
-								events.extend(
-									records
-										.into_iter()
-										.filter_map(|r| friendly::Event::from_runtime(r.event)),
-								);
-							},
-							Err(e) => {
-								return Ok(Err(handle_decode_error("events", e)));
-							},
-						}
+		let stream = stream.map(move |StorageNotification { block: _, changes, }| -> Result<RpcResult<Vec<friendly::Event>>, ()> {
+			let mut events = Vec::new();
+			for (_, _, data) in changes.iter() {
+				if let Some(sc_client_api::StorageData(data)) = data {
+					match <Vec<EventRecord<RuntimeEvent, H256>>>::decode(&mut data.as_slice()) {
+						Ok(records) => {
+							events.extend(
+								records
+									.into_iter()
+									.filter_map(|r| friendly::Event::from_runtime(r.event)),
+							);
+						},
+						Err(e) => {
+							return Ok(Err(handle_decode_error("events", e)));
+						},
 					}
 				}
-				Ok(Ok(events))
-			});
+			}
+			Ok(Ok(events))
+		});
 		self.manager.add(subscriber, move |sink| {
 			stream
 				.forward(sink.sink_map_err(|e| log::warn!("Error sending notifications: {}", e)))
