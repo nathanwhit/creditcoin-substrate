@@ -18,18 +18,18 @@ serde = { version = "1.0.136", features = ["derive"] }
 serde_json = "1.0.79"
 
 
-sp-api = { git = 'https://github.com/paritytech/substrate.git', rev = '666f39b8a22108f57732215de006518738034ba2' }
-sp-blockchain = { git = 'https://github.com/paritytech/substrate.git', rev = '666f39b8a22108f57732215de006518738034ba2' }
-sp-core = { git = 'https://github.com/paritytech/substrate.git', rev = '666f39b8a22108f57732215de006518738034ba2' }
-sp-rpc = { git = 'https://github.com/paritytech/substrate.git', rev = '666f39b8a22108f57732215de006518738034ba2' }
-sp-runtime = { git = 'https://github.com/paritytech/substrate.git', rev = '666f39b8a22108f57732215de006518738034ba2' }
-sp-state-machine = { git = 'https://github.com/paritytech/substrate.git', rev = '666f39b8a22108f57732215de006518738034ba2' }
-sc-rpc = { git = 'https://github.com/paritytech/substrate.git', rev = '666f39b8a22108f57732215de006518738034ba2' }
-sc-client-api = { git = 'https://github.com/paritytech/substrate.git', rev = '666f39b8a22108f57732215de006518738034ba2' }
-frame-system = { git = 'https://github.com/paritytech/substrate.git', rev = '666f39b8a22108f57732215de006518738034ba2' }
-frame-support = { git = 'https://github.com/paritytech/substrate.git', rev = '666f39b8a22108f57732215de006518738034ba2' }
-pallet-balances = { git = 'https://github.com/paritytech/substrate.git', rev = '666f39b8a22108f57732215de006518738034ba2' }
-pallet-timestamp = { git = 'https://github.com/paritytech/substrate.git', rev = '666f39b8a22108f57732215de006518738034ba2' }
+sp-api = { git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
+sp-blockchain = { git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
+sp-core = { git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
+sp-rpc = { git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
+sp-runtime = { git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
+sp-state-machine = { git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
+sc-rpc = { git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
+sc-client-api = { git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
+frame-system = { git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
+frame-support = { git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
+pallet-balances = { git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
+pallet-timestamp = { git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
 creditcoin-node-runtime = { path = "../../runtime" }
 jsonrpc-pubsub = "18.0.0"
 futures = "0.3.21"

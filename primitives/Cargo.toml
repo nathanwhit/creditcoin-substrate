@@ -10,4 +10,4 @@ edition = "2021"
 [dependencies.sp-core]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'

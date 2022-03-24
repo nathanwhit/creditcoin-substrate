@@ -21,7 +21,7 @@ path = "../../primitives"
 [dependencies.sp-arithmetic]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'
 
 
 [dependencies.codec]
@@ -34,19 +34,19 @@ version = '3.1.0'
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
 optional = true
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'
 
 
 [dependencies.frame-support]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'
 
 
 [dependencies.frame-system]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'
 
 
 [dependencies.scale-info]
@@ -57,19 +57,19 @@ version = '2.0'
 [dev-dependencies.sp-core]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'
 
 
 [dev-dependencies.sp-io]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'
 
 
 [dev-dependencies.sp-runtime]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'
 
 
 [features]

@@ -14,34 +14,34 @@ primitives = { path = "../primitives" }
 
 [dependencies.sc-consensus-pow]
 git = 'https://github.com/paritytech/substrate.git'
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'
 
 
 [dependencies.sc-keystore]
 git = 'https://github.com/paritytech/substrate.git'
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'
 
 
 [dependencies.sc-client-api]
 git = 'https://github.com/paritytech/substrate.git'
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'
 
 
 [dependencies.sp-api]
 git = 'https://github.com/paritytech/substrate.git'
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'
 
 
 [dependencies.sp-consensus-pow]
 git = 'https://github.com/paritytech/substrate.git'
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'
 
 
 [dependencies.sp-application-crypto]
 git = 'https://github.com/paritytech/substrate.git'
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'
 
 
 [dependencies.sp-core]
 git = 'https://github.com/paritytech/substrate.git'
-rev = '666f39b8a22108f57732215de006518738034ba2'
+branch = 'master'
