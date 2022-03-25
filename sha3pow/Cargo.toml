@@ -13,35 +13,35 @@ scale-info = "2.0.0"
 primitives = { path = "../primitives" }
 
 [dependencies.sc-consensus-pow]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-keystore]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-client-api]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sp-api]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sp-consensus-pow]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sp-application-crypto]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sp-core]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'

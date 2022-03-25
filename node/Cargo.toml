@@ -17,8 +17,8 @@ name = 'creditcoin-node'
 targets = ['x86_64-unknown-linux-gnu']
 
 [build-dependencies.substrate-build-script-utils]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.creditcoin-node-runtime]
@@ -38,147 +38,147 @@ creditcoin-node-rpc = { path = "./rpc" }
 clap = { version = "3.0", features = ["derive"] }
 
 [dependencies.frame-benchmarking]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.frame-benchmarking-cli]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.pallet-transaction-payment-rpc]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-basic-authorship]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-cli]
 features = ['wasmtime']
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-client-api]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-consensus]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-consensus-pow]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-executor]
 features = ['wasmtime']
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-keystore]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sp-keystore]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-offchain]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-rpc]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-rpc-api]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-service]
 features = ['wasmtime']
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-telemetry]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-transaction-pool]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sc-transaction-pool-api]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sp-api]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sp-block-builder]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sp-blockchain]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sp-consensus]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sp-consensus-pow]
 default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sp-inherents]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sp-core]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sp-runtime]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.sp-timestamp]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.substrate-frame-rpc-system]
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [features]

@@ -20,8 +20,8 @@ path = "../../primitives"
 
 [dependencies.sp-arithmetic]
 default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.codec]
@@ -32,21 +32,21 @@ version = '3.1.0'
 
 [dependencies.frame-benchmarking]
 default-features = false
-git = 'https://github.com/paritytech/substrate.git'
+git = 'https://github.com/nathanwhit/substrate.git'
 optional = true
-branch = 'master'
+branch = 'creditcoin'
 
 
 [dependencies.frame-support]
 default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.frame-system]
 default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dependencies.scale-info]
@@ -56,20 +56,20 @@ version = '2.0'
 
 [dev-dependencies.sp-core]
 default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dev-dependencies.sp-io]
 default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [dev-dependencies.sp-runtime]
 default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-branch = 'master'
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
 
 
 [features]
