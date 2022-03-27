@@ -955,7 +955,7 @@ dependencies = [
  "clap",
  "creditcoin-node-rpc",
  "creditcoin-node-runtime",
- "frame-benchmarking 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "frame-benchmarking",
  "frame-benchmarking-cli",
  "futures-lite",
  "hex",
@@ -966,29 +966,29 @@ dependencies = [
  "parity-scale-codec",
  "sc-basic-authorship",
  "sc-cli",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-consensus 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-consensus-pow 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-executor 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-keystore 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-client-api",
+ "sc-consensus",
+ "sc-consensus-pow",
+ "sc-executor",
+ "sc-keystore",
  "sc-offchain",
- "sc-rpc 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-rpc-api 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-rpc",
+ "sc-rpc-api",
  "sc-service",
- "sc-telemetry 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-telemetry",
  "sc-transaction-pool",
- "sc-transaction-pool-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-transaction-pool-api",
  "sha3pow",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-block-builder 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-consensus 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-consensus-pow 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-keystore 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-timestamp 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sp-api",
+ "sp-block-builder",
+ "sp-blockchain",
+ "sp-consensus",
+ "sp-consensus-pow",
+ "sp-core",
+ "sp-inherents",
+ "sp-keystore",
+ "sp-runtime",
+ "sp-timestamp",
  "substrate-build-script-utils",
  "substrate-frame-rpc-system",
  "tiny-bip39",
@@ -999,8 +999,8 @@ name = "creditcoin-node-rpc"
 version = "2.0.0-beta.5"
 dependencies = [
  "creditcoin-node-runtime",
- "frame-support 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-support",
+ "frame-system",
  "futures 0.3.21",
  "hex",
  "jsonrpc-core",
@@ -1013,28 +1013,28 @@ dependencies = [
  "pallet-rewards",
  "pallet-timestamp",
  "parity-scale-codec",
- "sc-client-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-rpc 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sc-client-api",
+ "sc-rpc",
  "serde",
  "serde_json",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-rpc 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-blockchain",
+ "sp-core",
+ "sp-rpc",
+ "sp-runtime",
+ "sp-state-machine",
 ]
 
 [[package]]
 name = "creditcoin-node-runtime"
 version = "2.0.0-beta.5"
 dependencies = [
- "frame-benchmarking 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-benchmarking",
  "frame-executive",
- "frame-support 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-support",
+ "frame-system",
  "frame-system-benchmarking",
- "frame-system-rpc-runtime-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-system-rpc-runtime-api",
  "hex-literal",
  "pallet-balances",
  "pallet-creditcoin",
@@ -1043,23 +1043,23 @@ dependencies = [
  "pallet-rewards",
  "pallet-sudo",
  "pallet-timestamp",
- "pallet-transaction-payment 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "pallet-transaction-payment-rpc-runtime-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "pallet-transaction-payment",
+ "pallet-transaction-payment-rpc-runtime-api",
  "parity-scale-codec",
  "primitives",
  "scale-info",
  "smallvec",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-block-builder 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-consensus-pow 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-offchain 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-session 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-transaction-pool 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-block-builder",
+ "sp-consensus-pow",
+ "sp-core",
+ "sp-inherents",
+ "sp-offchain",
+ "sp-runtime",
+ "sp-session",
+ "sp-std",
+ "sp-transaction-pool",
+ "sp-version",
  "substrate-wasm-builder",
 ]
 
@@ -1609,15 +1609,7 @@ checksum = "3f9eec918d3f24069decb9af1554cad7c880e2da24a9afd88aca000531ab82c1"
 [[package]]
 name = "fork-tree"
 version = "3.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "parity-scale-codec",
-]
-
-[[package]]
-name = "fork-tree"
-version = "3.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "parity-scale-codec",
 ]
@@ -1635,57 +1627,35 @@ dependencies = [
 [[package]]
 name = "frame-benchmarking"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
- "frame-support 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "frame-support",
+ "frame-system",
  "linregress",
  "log",
  "parity-scale-codec",
  "paste",
  "scale-info",
  "serde",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-application-crypto 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime-interface 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-storage 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "frame-benchmarking"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "frame-support 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "linregress",
- "log",
- "parity-scale-codec",
- "paste",
- "scale-info",
- "serde",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-application-crypto 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime-interface 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-storage 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-application-crypto",
+ "sp-io",
+ "sp-runtime",
+ "sp-runtime-interface",
+ "sp-std",
+ "sp-storage",
 ]
 
 [[package]]
 name = "frame-benchmarking-cli"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "Inflector",
  "chrono",
  "clap",
- "frame-benchmarking 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "frame-support 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "frame-benchmarking",
+ "frame-support",
  "handlebars",
  "hash-db",
  "hex",
@@ -1696,43 +1666,43 @@ dependencies = [
  "memory-db",
  "parity-scale-codec",
  "rand 0.8.5",
- "sc-block-builder 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-block-builder",
  "sc-cli",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-client-api",
  "sc-client-db",
- "sc-executor 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-executor",
  "sc-service",
  "serde",
  "serde_json",
  "serde_nanos",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-database 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-keystore 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-storage 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-trie 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sp-api",
+ "sp-blockchain",
+ "sp-core",
+ "sp-database",
+ "sp-externalities",
+ "sp-inherents",
+ "sp-keystore",
+ "sp-runtime",
+ "sp-state-machine",
+ "sp-std",
+ "sp-storage",
+ "sp-trie",
 ]
 
 [[package]]
 name = "frame-executive"
 version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
- "frame-support 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-support",
+ "frame-system",
  "parity-scale-codec",
  "scale-info",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-tracing 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
+ "sp-std",
+ "sp-tracing",
 ]
 
 [[package]]
@@ -1750,11 +1720,11 @@ dependencies = [
 [[package]]
 name = "frame-support"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "bitflags",
  "frame-metadata",
- "frame-support-procedural 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "frame-support-procedural",
  "impl-trait-for-tuples",
  "log",
  "once_cell",
@@ -1763,67 +1733,26 @@ dependencies = [
  "scale-info",
  "serde",
  "smallvec",
- "sp-arithmetic 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core-hashing-proc-macro 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-staking 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-tracing 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "tt-call",
-]
-
-[[package]]
-name = "frame-support"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "bitflags",
- "frame-metadata",
- "frame-support-procedural 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "impl-trait-for-tuples",
- "log",
- "once_cell",
- "parity-scale-codec",
- "paste",
- "scale-info",
- "serde",
- "smallvec",
- "sp-arithmetic 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core-hashing-proc-macro 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-staking 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-tracing 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-arithmetic",
+ "sp-core",
+ "sp-core-hashing-proc-macro",
+ "sp-inherents",
+ "sp-io",
+ "sp-runtime",
+ "sp-staking",
+ "sp-state-machine",
+ "sp-std",
+ "sp-tracing",
  "tt-call",
 ]
 
 [[package]]
 name = "frame-support-procedural"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "Inflector",
- "frame-support-procedural-tools 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
-name = "frame-support-procedural"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "Inflector",
- "frame-support-procedural-tools 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-support-procedural-tools",
  "proc-macro2",
  "quote",
  "syn",
@@ -1832,21 +1761,9 @@ dependencies = [
 [[package]]
 name = "frame-support-procedural-tools"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
- "frame-support-procedural-tools-derive 3.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "proc-macro-crate 1.1.3",
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
-name = "frame-support-procedural-tools"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "frame-support-procedural-tools-derive 3.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-support-procedural-tools-derive",
  "proc-macro-crate 1.1.3",
  "proc-macro2",
  "quote",
@@ -1856,17 +1773,7 @@ dependencies = [
 [[package]]
 name = "frame-support-procedural-tools-derive"
 version = "3.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
-name = "frame-support-procedural-tools-derive"
-version = "3.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1876,68 +1783,42 @@ dependencies = [
 [[package]]
 name = "frame-system"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
- "frame-support 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "frame-support",
  "log",
  "parity-scale-codec",
  "scale-info",
  "serde",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "frame-system"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "frame-support 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "log",
- "parity-scale-codec",
- "scale-info",
- "serde",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
+ "sp-std",
+ "sp-version",
 ]
 
 [[package]]
 name = "frame-system-benchmarking"
 version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
- "frame-benchmarking 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-support 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
  "parity-scale-codec",
  "scale-info",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-runtime",
+ "sp-std",
 ]
 
 [[package]]
 name = "frame-system-rpc-runtime-api"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "parity-scale-codec",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "frame-system-rpc-runtime-api"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "parity-scale-codec",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
 ]
 
 [[package]]
@@ -4104,16 +3985,16 @@ dependencies = [
 [[package]]
 name = "pallet-balances"
 version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
- "frame-benchmarking 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-support 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
  "log",
  "parity-scale-codec",
  "scale-info",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-runtime",
+ "sp-std",
 ]
 
 [[package]]
@@ -4124,178 +4005,150 @@ dependencies = [
  "ethabi",
  "ethereum-types",
  "extend",
- "frame-benchmarking 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-support 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
  "hex",
  "lexical",
  "log",
  "pallet-balances",
  "pallet-timestamp",
  "parity-scale-codec",
- "parking_lot 0.11.2",
+ "parking_lot 0.12.0",
  "scale-info",
  "serde",
  "serde_json",
  "sha2 0.10.2",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-keystore 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-tracing 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-io",
+ "sp-keystore",
+ "sp-runtime",
+ "sp-std",
+ "sp-tracing",
 ]
 
 [[package]]
 name = "pallet-difficulty"
 version = "2.0.0-beta.5"
 dependencies = [
- "frame-benchmarking 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-support 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
  "log",
  "parity-scale-codec",
  "primitives",
  "scale-info",
- "sp-arithmetic 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-arithmetic",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
 ]
 
 [[package]]
 name = "pallet-randomness-collective-flip"
 version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
- "frame-support 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-support",
+ "frame-system",
  "parity-scale-codec",
  "safe-mix",
  "scale-info",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-runtime",
+ "sp-std",
 ]
 
 [[package]]
 name = "pallet-rewards"
 version = "2.0.0-beta.5"
 dependencies = [
- "frame-benchmarking 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-support 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
  "pallet-balances",
  "parity-scale-codec",
  "scale-info",
- "sp-consensus-pow 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-consensus-pow",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
 ]
 
 [[package]]
 name = "pallet-sudo"
 version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
- "frame-support 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-support",
+ "frame-system",
  "parity-scale-codec",
  "scale-info",
- "sp-io 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-io",
+ "sp-runtime",
+ "sp-std",
 ]
 
 [[package]]
 name = "pallet-timestamp"
 version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
- "frame-benchmarking 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-support 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "frame-benchmarking",
+ "frame-support",
+ "frame-system",
  "log",
  "parity-scale-codec",
  "scale-info",
- "sp-inherents 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-timestamp 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-inherents",
+ "sp-io",
+ "sp-runtime",
+ "sp-std",
+ "sp-timestamp",
 ]
 
 [[package]]
 name = "pallet-transaction-payment"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
- "frame-support 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "frame-support",
+ "frame-system",
  "parity-scale-codec",
  "scale-info",
  "serde",
  "smallvec",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "pallet-transaction-payment"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "frame-support 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "frame-system 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "parity-scale-codec",
- "scale-info",
- "serde",
- "smallvec",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-io",
+ "sp-runtime",
+ "sp-std",
 ]
 
 [[package]]
 name = "pallet-transaction-payment-rpc"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "jsonrpc-core",
  "jsonrpc-core-client",
  "jsonrpc-derive",
- "pallet-transaction-payment-rpc-runtime-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "pallet-transaction-payment-rpc-runtime-api",
  "parity-scale-codec",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-rpc 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sp-api",
+ "sp-blockchain",
+ "sp-core",
+ "sp-rpc",
+ "sp-runtime",
 ]
 
 [[package]]
 name = "pallet-transaction-payment-rpc-runtime-api"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
- "pallet-transaction-payment 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "pallet-transaction-payment",
  "parity-scale-codec",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "pallet-transaction-payment-rpc-runtime-api"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "pallet-transaction-payment 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "parity-scale-codec",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-runtime",
 ]
 
 [[package]]
@@ -4702,7 +4555,8 @@ dependencies = [
 name = "primitives"
 version = "2.0.0-beta.5"
 dependencies = [
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sp-core",
+ "sp-runtime",
 ]
 
 [[package]]
@@ -5289,129 +5143,74 @@ dependencies = [
 [[package]]
 name = "sc-allocator"
 version = "4.1.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "log",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-wasm-interface 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
-]
-
-[[package]]
-name = "sc-allocator"
-version = "4.1.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "log",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-wasm-interface 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-wasm-interface",
  "thiserror",
 ]
 
 [[package]]
 name = "sc-basic-authorship"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "futures 0.3.21",
  "futures-timer",
  "log",
  "parity-scale-codec",
- "sc-block-builder 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-block-builder",
+ "sc-client-api",
  "sc-proposer-metrics",
- "sc-telemetry 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-transaction-pool-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-consensus 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "substrate-prometheus-endpoint 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-telemetry",
+ "sc-transaction-pool-api",
+ "sp-api",
+ "sp-blockchain",
+ "sp-consensus",
+ "sp-core",
+ "sp-inherents",
+ "sp-runtime",
+ "substrate-prometheus-endpoint",
 ]
 
 [[package]]
 name = "sc-block-builder"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "parity-scale-codec",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-block-builder 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sc-block-builder"
-version = "0.10.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "parity-scale-codec",
- "sc-client-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-block-builder 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sc-client-api",
+ "sp-api",
+ "sp-block-builder",
+ "sp-blockchain",
+ "sp-core",
+ "sp-inherents",
+ "sp-runtime",
+ "sp-state-machine",
 ]
 
 [[package]]
 name = "sc-chain-spec"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "impl-trait-for-tuples",
  "memmap2 0.5.3",
  "parity-scale-codec",
- "sc-chain-spec-derive 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-network 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-telemetry 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-chain-spec-derive",
+ "sc-network",
+ "sc-telemetry",
  "serde",
  "serde_json",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sc-chain-spec"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "impl-trait-for-tuples",
- "memmap2 0.5.3",
- "parity-scale-codec",
- "sc-chain-spec-derive 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-network 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-telemetry 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "serde",
- "serde_json",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-runtime",
 ]
 
 [[package]]
 name = "sc-chain-spec-derive"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "proc-macro-crate 1.1.3",
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
-name = "sc-chain-spec-derive"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "proc-macro-crate 1.1.3",
  "proc-macro2",
@@ -5422,7 +5221,7 @@ dependencies = [
 [[package]]
 name = "sc-cli"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "chrono",
  "clap",
@@ -5436,22 +5235,22 @@ dependencies = [
  "rand 0.7.3",
  "regex",
  "rpassword",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-keystore 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-network 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-client-api",
+ "sc-keystore",
+ "sc-network",
  "sc-service",
- "sc-telemetry 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-tracing 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-utils 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-telemetry",
+ "sc-tracing",
+ "sc-utils",
  "serde",
  "serde_json",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sp-blockchain",
+ "sp-core",
  "sp-keyring",
- "sp-keystore 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-panic-handler 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sp-keystore",
+ "sp-panic-handler",
+ "sp-runtime",
+ "sp-version",
  "thiserror",
  "tiny-bip39",
  "tokio",
@@ -5460,7 +5259,7 @@ dependencies = [
 [[package]]
 name = "sc-client-api"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "fnv",
  "futures 0.3.21",
@@ -5468,55 +5267,27 @@ dependencies = [
  "log",
  "parity-scale-codec",
  "parking_lot 0.12.0",
- "sc-executor 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-transaction-pool-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-utils 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-consensus 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-database 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-keystore 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-storage 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-trie 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "substrate-prometheus-endpoint 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sc-client-api"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "fnv",
- "futures 0.3.21",
- "hash-db",
- "log",
- "parity-scale-codec",
- "parking_lot 0.12.0",
- "sc-executor 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-transaction-pool-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-utils 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-consensus 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-database 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-keystore 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-storage 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-trie 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "substrate-prometheus-endpoint 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sc-executor",
+ "sc-transaction-pool-api",
+ "sc-utils",
+ "sp-api",
+ "sp-blockchain",
+ "sp-consensus",
+ "sp-core",
+ "sp-database",
+ "sp-externalities",
+ "sp-keystore",
+ "sp-runtime",
+ "sp-state-machine",
+ "sp-storage",
+ "sp-trie",
+ "substrate-prometheus-endpoint",
 ]
 
 [[package]]
 name = "sc-client-db"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "hash-db",
  "kvdb",
@@ -5527,21 +5298,21 @@ dependencies = [
  "parity-db",
  "parity-scale-codec",
  "parking_lot 0.12.0",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-client-api",
  "sc-state-db",
- "sp-arithmetic 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-database 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-trie 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sp-arithmetic",
+ "sp-blockchain",
+ "sp-core",
+ "sp-database",
+ "sp-runtime",
+ "sp-state-machine",
+ "sp-trie",
 ]
 
 [[package]]
 name = "sc-consensus"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "async-trait",
  "futures 0.3.21",
@@ -5549,47 +5320,23 @@ dependencies = [
  "libp2p",
  "log",
  "parking_lot 0.12.0",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-utils 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-client-api",
+ "sc-utils",
  "serde",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-consensus 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "substrate-prometheus-endpoint 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
-]
-
-[[package]]
-name = "sc-consensus"
-version = "0.10.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "async-trait",
- "futures 0.3.21",
- "futures-timer",
- "libp2p",
- "log",
- "parking_lot 0.12.0",
- "sc-client-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-utils 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "serde",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-consensus 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "substrate-prometheus-endpoint 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-blockchain",
+ "sp-consensus",
+ "sp-core",
+ "sp-runtime",
+ "sp-state-machine",
+ "substrate-prometheus-endpoint",
  "thiserror",
 ]
 
 [[package]]
 name = "sc-consensus-pow"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "async-trait",
  "futures 0.3.21",
@@ -5597,94 +5344,43 @@ dependencies = [
  "log",
  "parity-scale-codec",
  "parking_lot 0.12.0",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-consensus 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-block-builder 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-consensus 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-consensus-pow 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "substrate-prometheus-endpoint 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
-]
-
-[[package]]
-name = "sc-consensus-pow"
-version = "0.10.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "async-trait",
- "futures 0.3.21",
- "futures-timer",
- "log",
- "parity-scale-codec",
- "parking_lot 0.12.0",
- "sc-client-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-consensus 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-block-builder 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-consensus 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-consensus-pow 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "substrate-prometheus-endpoint 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sc-client-api",
+ "sc-consensus",
+ "sp-api",
+ "sp-block-builder",
+ "sp-blockchain",
+ "sp-consensus",
+ "sp-consensus-pow",
+ "sp-core",
+ "sp-inherents",
+ "sp-runtime",
+ "substrate-prometheus-endpoint",
  "thiserror",
 ]
 
 [[package]]
 name = "sc-executor"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "lazy_static",
  "lru 0.6.6",
  "parity-scale-codec",
  "parking_lot 0.12.0",
- "sc-executor-common 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-executor-wasmi 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-executor-common",
+ "sc-executor-wasmi",
  "sc-executor-wasmtime",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core-hashing-proc-macro 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-panic-handler 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime-interface 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-tasks 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-trie 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-wasm-interface 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "tracing",
- "wasmi",
-]
-
-[[package]]
-name = "sc-executor"
-version = "0.10.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "lazy_static",
- "lru 0.6.6",
- "parity-scale-codec",
- "parking_lot 0.12.0",
- "sc-executor-common 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-executor-wasmi 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core-hashing-proc-macro 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-panic-handler 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime-interface 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-tasks 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-trie 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-wasm-interface 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-core",
+ "sp-core-hashing-proc-macro",
+ "sp-externalities",
+ "sp-io",
+ "sp-panic-handler",
+ "sp-runtime-interface",
+ "sp-tasks",
+ "sp-trie",
+ "sp-version",
+ "sp-wasm-interface",
  "tracing",
  "wasmi",
 ]
@@ -5692,32 +5388,15 @@ dependencies = [
 [[package]]
 name = "sc-executor-common"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "environmental",
  "parity-scale-codec",
- "sc-allocator 4.1.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-maybe-compressed-blob 4.1.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-serializer 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-wasm-interface 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
- "wasm-instrument",
- "wasmi",
-]
-
-[[package]]
-name = "sc-executor-common"
-version = "0.10.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "environmental",
- "parity-scale-codec",
- "sc-allocator 4.1.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-maybe-compressed-blob 4.1.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-serializer 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-wasm-interface 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sc-allocator",
+ "sp-core",
+ "sp-maybe-compressed-blob",
+ "sp-serializer",
+ "sp-wasm-interface",
  "thiserror",
  "wasm-instrument",
  "wasmi",
@@ -5726,104 +5405,73 @@ dependencies = [
 [[package]]
 name = "sc-executor-wasmi"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "log",
  "parity-scale-codec",
- "sc-allocator 4.1.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-executor-common 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-allocator",
+ "sc-executor-common",
  "scoped-tls",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime-interface 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-wasm-interface 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "wasmi",
-]
-
-[[package]]
-name = "sc-executor-wasmi"
-version = "0.10.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "log",
- "parity-scale-codec",
- "sc-allocator 4.1.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-executor-common 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "scoped-tls",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime-interface 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-wasm-interface 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-runtime-interface",
+ "sp-wasm-interface",
  "wasmi",
 ]
 
 [[package]]
 name = "sc-executor-wasmtime"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "cfg-if 1.0.0",
  "libc",
  "log",
  "parity-scale-codec",
  "parity-wasm 0.42.2",
- "sc-allocator 4.1.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-executor-common 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime-interface 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-wasm-interface 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-allocator",
+ "sc-executor-common",
+ "sp-core",
+ "sp-runtime-interface",
+ "sp-wasm-interface",
  "wasmtime",
 ]
 
 [[package]]
 name = "sc-informant"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "ansi_term",
  "futures 0.3.21",
  "futures-timer",
  "log",
  "parity-util-mem",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-network 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-transaction-pool-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-client-api",
+ "sc-network",
+ "sc-transaction-pool-api",
+ "sp-blockchain",
+ "sp-runtime",
 ]
 
 [[package]]
 name = "sc-keystore"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "async-trait",
  "hex",
  "parking_lot 0.12.0",
  "serde_json",
- "sp-application-crypto 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-keystore 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
-]
-
-[[package]]
-name = "sc-keystore"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "async-trait",
- "hex",
- "parking_lot 0.12.0",
- "serde_json",
- "sp-application-crypto 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-keystore 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-application-crypto",
+ "sp-core",
+ "sp-keystore",
  "thiserror",
 ]
 
 [[package]]
 name = "sc-network"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "async-trait",
  "asynchronous-codec 0.5.0",
@@ -5832,7 +5480,7 @@ dependencies = [
  "cid",
  "either",
  "fnv",
- "fork-tree 3.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "fork-tree",
  "futures 0.3.21",
  "futures-timer",
  "hex",
@@ -5848,70 +5496,21 @@ dependencies = [
  "prost",
  "prost-build",
  "rand 0.7.3",
- "sc-block-builder 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-consensus 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-peerset 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-utils 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-block-builder",
+ "sc-client-api",
+ "sc-consensus",
+ "sc-peerset",
+ "sc-utils",
  "serde",
  "serde_json",
  "smallvec",
- "sp-arithmetic 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-consensus 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-finality-grandpa 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "substrate-prometheus-endpoint 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
- "unsigned-varint 0.6.0",
- "void",
- "zeroize",
-]
-
-[[package]]
-name = "sc-network"
-version = "0.10.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "async-trait",
- "asynchronous-codec 0.5.0",
- "bitflags",
- "bytes 1.1.0",
- "cid",
- "either",
- "fnv",
- "fork-tree 3.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "futures 0.3.21",
- "futures-timer",
- "hex",
- "ip_network",
- "libp2p",
- "linked-hash-map",
- "linked_hash_set",
- "log",
- "lru 0.7.3",
- "parity-scale-codec",
- "parking_lot 0.12.0",
- "pin-project 1.0.10",
- "prost",
- "prost-build",
- "rand 0.7.3",
- "sc-block-builder 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-client-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-consensus 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-peerset 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-utils 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "serde",
- "serde_json",
- "smallvec",
- "sp-arithmetic 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-consensus 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-finality-grandpa 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "substrate-prometheus-endpoint 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-arithmetic",
+ "sp-blockchain",
+ "sp-consensus",
+ "sp-core",
+ "sp-finality-grandpa",
+ "sp-runtime",
+ "substrate-prometheus-endpoint",
  "thiserror",
  "unsigned-varint 0.6.0",
  "void",
@@ -5921,7 +5520,7 @@ dependencies = [
 [[package]]
 name = "sc-offchain"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "bytes 1.1.0",
  "fnv",
@@ -5935,13 +5534,13 @@ dependencies = [
  "parity-scale-codec",
  "parking_lot 0.12.0",
  "rand 0.7.3",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-network 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-utils 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-offchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-client-api",
+ "sc-network",
+ "sc-utils",
+ "sp-api",
+ "sp-core",
+ "sp-offchain",
+ "sp-runtime",
  "threadpool",
  "tracing",
 ]
@@ -5949,25 +5548,12 @@ dependencies = [
 [[package]]
 name = "sc-peerset"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "futures 0.3.21",
  "libp2p",
  "log",
- "sc-utils 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "serde_json",
- "wasm-timer",
-]
-
-[[package]]
-name = "sc-peerset"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "futures 0.3.21",
- "libp2p",
- "log",
- "sc-utils 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sc-utils",
  "serde_json",
  "wasm-timer",
 ]
@@ -5975,16 +5561,16 @@ dependencies = [
 [[package]]
 name = "sc-proposer-metrics"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "log",
- "substrate-prometheus-endpoint 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "substrate-prometheus-endpoint",
 ]
 
 [[package]]
 name = "sc-rpc"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "futures 0.3.21",
  "hash-db",
@@ -5993,60 +5579,29 @@ dependencies = [
  "log",
  "parity-scale-codec",
  "parking_lot 0.12.0",
- "sc-block-builder 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-chain-spec 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-rpc-api 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-tracing 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-transaction-pool-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-utils 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-block-builder",
+ "sc-chain-spec",
+ "sc-client-api",
+ "sc-rpc-api",
+ "sc-tracing",
+ "sc-transaction-pool-api",
+ "sc-utils",
  "serde_json",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-keystore 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-offchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-rpc 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-session 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sc-rpc"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "futures 0.3.21",
- "hash-db",
- "jsonrpc-core",
- "jsonrpc-pubsub",
- "log",
- "parity-scale-codec",
- "parking_lot 0.12.0",
- "sc-block-builder 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-chain-spec 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-client-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-rpc-api 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-tracing 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-transaction-pool-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-utils 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "serde_json",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-keystore 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-offchain 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-rpc 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-session 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-blockchain",
+ "sp-core",
+ "sp-keystore",
+ "sp-offchain",
+ "sp-rpc",
+ "sp-runtime",
+ "sp-session",
+ "sp-version",
 ]
 
 [[package]]
 name = "sc-rpc-api"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "futures 0.3.21",
  "jsonrpc-core",
@@ -6056,49 +5611,23 @@ dependencies = [
  "log",
  "parity-scale-codec",
  "parking_lot 0.12.0",
- "sc-chain-spec 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-transaction-pool-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-chain-spec",
+ "sc-transaction-pool-api",
  "scale-info",
  "serde",
  "serde_json",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-rpc 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-tracing 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
-]
-
-[[package]]
-name = "sc-rpc-api"
-version = "0.10.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "futures 0.3.21",
- "jsonrpc-core",
- "jsonrpc-core-client",
- "jsonrpc-derive",
- "jsonrpc-pubsub",
- "log",
- "parity-scale-codec",
- "parking_lot 0.12.0",
- "sc-chain-spec 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-transaction-pool-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "scale-info",
- "serde",
- "serde_json",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-rpc 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-tracing 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-rpc",
+ "sp-runtime",
+ "sp-tracing",
+ "sp-version",
  "thiserror",
 ]
 
 [[package]]
 name = "sc-rpc-server"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "futures 0.3.21",
  "jsonrpc-core",
@@ -6108,31 +5637,14 @@ dependencies = [
  "jsonrpc-ws-server",
  "log",
  "serde_json",
- "substrate-prometheus-endpoint 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "tokio",
-]
-
-[[package]]
-name = "sc-rpc-server"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "futures 0.3.21",
- "jsonrpc-core",
- "jsonrpc-http-server",
- "jsonrpc-ipc-server",
- "jsonrpc-pubsub",
- "jsonrpc-ws-server",
- "log",
- "serde_json",
- "substrate-prometheus-endpoint 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "substrate-prometheus-endpoint",
  "tokio",
 ]
 
 [[package]]
 name = "sc-service"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "async-trait",
  "directories",
@@ -6148,44 +5660,44 @@ dependencies = [
  "parking_lot 0.12.0",
  "pin-project 1.0.10",
  "rand 0.7.3",
- "sc-block-builder 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-chain-spec 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-block-builder",
+ "sc-chain-spec",
+ "sc-client-api",
  "sc-client-db",
- "sc-consensus 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-executor 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-consensus",
+ "sc-executor",
  "sc-informant",
- "sc-keystore 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-network 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-keystore",
+ "sc-network",
  "sc-offchain",
- "sc-rpc 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-rpc-server 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-telemetry 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-tracing 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-rpc",
+ "sc-rpc-server",
+ "sc-telemetry",
+ "sc-tracing",
  "sc-transaction-pool",
- "sc-transaction-pool-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-utils 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-transaction-pool-api",
+ "sc-utils",
  "serde",
  "serde_json",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-application-crypto 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-block-builder 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-consensus 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-keystore 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-session 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-storage 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-tracing 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-transaction-pool 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sp-api",
+ "sp-application-crypto",
+ "sp-block-builder",
+ "sp-blockchain",
+ "sp-consensus",
+ "sp-core",
+ "sp-externalities",
+ "sp-inherents",
+ "sp-keystore",
+ "sp-runtime",
+ "sp-session",
+ "sp-state-machine",
+ "sp-storage",
+ "sp-tracing",
+ "sp-transaction-pool",
  "sp-transaction-storage-proof",
- "sp-trie 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "substrate-prometheus-endpoint 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sp-trie",
+ "sp-version",
+ "substrate-prometheus-endpoint",
  "tempfile",
  "thiserror",
  "tokio",
@@ -6196,39 +5708,21 @@ dependencies = [
 [[package]]
 name = "sc-state-db"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "log",
  "parity-scale-codec",
  "parity-util-mem",
  "parity-util-mem-derive",
  "parking_lot 0.12.0",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-client-api",
+ "sp-core",
 ]
 
 [[package]]
 name = "sc-telemetry"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "chrono",
- "futures 0.3.21",
- "libp2p",
- "log",
- "parking_lot 0.12.0",
- "pin-project 1.0.10",
- "rand 0.7.3",
- "serde",
- "serde_json",
- "thiserror",
- "wasm-timer",
-]
-
-[[package]]
-name = "sc-telemetry"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "chrono",
  "futures 0.3.21",
@@ -6246,7 +5740,7 @@ dependencies = [
 [[package]]
 name = "sc-tracing"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "ansi_term",
  "atty",
@@ -6258,47 +5752,16 @@ dependencies = [
  "parking_lot 0.12.0",
  "regex",
  "rustc-hash",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-rpc-server 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-tracing-proc-macro 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-client-api",
+ "sc-rpc-server",
+ "sc-tracing-proc-macro",
  "serde",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-rpc 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-tracing 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
- "tracing",
- "tracing-log",
- "tracing-subscriber",
-]
-
-[[package]]
-name = "sc-tracing"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "ansi_term",
- "atty",
- "chrono",
- "lazy_static",
- "libc",
- "log",
- "once_cell",
- "parking_lot 0.12.0",
- "regex",
- "rustc-hash",
- "sc-client-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-rpc-server 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-tracing-proc-macro 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "serde",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-rpc 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-tracing 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-blockchain",
+ "sp-core",
+ "sp-rpc",
+ "sp-runtime",
+ "sp-tracing",
  "thiserror",
  "tracing",
  "tracing-log",
@@ -6308,18 +5771,7 @@ dependencies = [
 [[package]]
 name = "sc-tracing-proc-macro"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "proc-macro-crate 1.1.3",
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
-name = "sc-tracing-proc-macro"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "proc-macro-crate 1.1.3",
  "proc-macro2",
@@ -6330,7 +5782,7 @@ dependencies = [
 [[package]]
 name = "sc-transaction-pool"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "futures 0.3.21",
  "futures-timer",
@@ -6340,63 +5792,37 @@ dependencies = [
  "parity-util-mem",
  "parking_lot 0.12.0",
  "retain_mut",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-transaction-pool-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-utils 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-client-api",
+ "sc-transaction-pool-api",
+ "sc-utils",
  "serde",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-tracing 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-transaction-pool 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "substrate-prometheus-endpoint 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sp-api",
+ "sp-blockchain",
+ "sp-core",
+ "sp-runtime",
+ "sp-tracing",
+ "sp-transaction-pool",
+ "substrate-prometheus-endpoint",
  "thiserror",
 ]
 
 [[package]]
 name = "sc-transaction-pool-api"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "futures 0.3.21",
  "log",
  "serde",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
-]
-
-[[package]]
-name = "sc-transaction-pool-api"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "futures 0.3.21",
- "log",
- "serde",
- "sp-blockchain 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-blockchain",
+ "sp-runtime",
  "thiserror",
 ]
 
 [[package]]
 name = "sc-utils"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "futures 0.3.21",
- "futures-timer",
- "lazy_static",
- "log",
- "parking_lot 0.12.0",
- "prometheus",
-]
-
-[[package]]
-name = "sc-utils"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "futures 0.3.21",
  "futures-timer",
@@ -6713,15 +6139,15 @@ dependencies = [
  "parity-scale-codec",
  "primitives",
  "rand 0.8.5",
- "sc-client-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-consensus-pow 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sc-keystore 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sc-client-api",
+ "sc-consensus-pow",
+ "sc-keystore",
  "scale-info",
  "sha3 0.9.1",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-application-crypto 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-consensus-pow 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-application-crypto",
+ "sp-consensus-pow",
+ "sp-core",
 ]
 
 [[package]]
@@ -6842,53 +6268,24 @@ dependencies = [
 [[package]]
 name = "sp-api"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "hash-db",
  "log",
  "parity-scale-codec",
- "sp-api-proc-macro 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
-]
-
-[[package]]
-name = "sp-api"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "hash-db",
- "log",
- "parity-scale-codec",
- "sp-api-proc-macro 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api-proc-macro",
+ "sp-core",
+ "sp-runtime",
+ "sp-state-machine",
+ "sp-std",
+ "sp-version",
  "thiserror",
 ]
 
 [[package]]
 name = "sp-api-proc-macro"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "blake2 0.10.4",
- "proc-macro-crate 1.1.3",
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
-name = "sp-api-proc-macro"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "blake2 0.10.4",
  "proc-macro-crate 1.1.3",
@@ -6900,185 +6297,96 @@ dependencies = [
 [[package]]
 name = "sp-application-crypto"
 version = "6.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
  "serde",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sp-application-crypto"
-version = "6.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "parity-scale-codec",
- "scale-info",
- "serde",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-io",
+ "sp-std",
 ]
 
 [[package]]
 name = "sp-arithmetic"
 version = "5.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "integer-sqrt",
  "num-traits",
  "parity-scale-codec",
  "scale-info",
  "serde",
- "sp-debug-derive 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "static_assertions",
-]
-
-[[package]]
-name = "sp-arithmetic"
-version = "5.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "integer-sqrt",
- "num-traits",
- "parity-scale-codec",
- "scale-info",
- "serde",
- "sp-debug-derive 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-debug-derive",
+ "sp-std",
  "static_assertions",
 ]
 
 [[package]]
 name = "sp-block-builder"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "parity-scale-codec",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sp-block-builder"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "parity-scale-codec",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-inherents",
+ "sp-runtime",
+ "sp-std",
 ]
 
 [[package]]
 name = "sp-blockchain"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "futures 0.3.21",
  "log",
  "lru 0.7.3",
  "parity-scale-codec",
  "parking_lot 0.12.0",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-consensus 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-database 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
-]
-
-[[package]]
-name = "sp-blockchain"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "futures 0.3.21",
- "log",
- "lru 0.7.3",
- "parity-scale-codec",
- "parking_lot 0.12.0",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-consensus 0.10.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-database 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-consensus",
+ "sp-database",
+ "sp-runtime",
+ "sp-state-machine",
  "thiserror",
 ]
 
 [[package]]
 name = "sp-consensus"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "async-trait",
  "futures 0.3.21",
  "futures-timer",
  "log",
  "parity-scale-codec",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
-]
-
-[[package]]
-name = "sp-consensus"
-version = "0.10.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "async-trait",
- "futures 0.3.21",
- "futures-timer",
- "log",
- "parity-scale-codec",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-version 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-inherents",
+ "sp-runtime",
+ "sp-state-machine",
+ "sp-std",
+ "sp-version",
  "thiserror",
 ]
 
 [[package]]
 name = "sp-consensus-pow"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "parity-scale-codec",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sp-consensus-pow"
-version = "0.10.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "parity-scale-codec",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-core",
+ "sp-runtime",
+ "sp-std",
 ]
 
 [[package]]
 name = "sp-core"
 version = "6.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "base58",
  "bitflags",
@@ -7107,58 +6415,12 @@ dependencies = [
  "secp256k1",
  "secrecy",
  "serde",
- "sp-core-hashing 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-debug-derive 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime-interface 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-storage 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "ss58-registry",
- "substrate-bip39",
- "thiserror",
- "tiny-bip39",
- "wasmi",
- "zeroize",
-]
-
-[[package]]
-name = "sp-core"
-version = "6.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "base58",
- "bitflags",
- "blake2-rfc",
- "byteorder",
- "dyn-clonable",
- "ed25519-dalek",
- "futures 0.3.21",
- "hash-db",
- "hash256-std-hasher",
- "hex",
- "impl-serde",
- "lazy_static",
- "libsecp256k1",
- "log",
- "merlin",
- "num-traits",
- "parity-scale-codec",
- "parity-util-mem",
- "parking_lot 0.12.0",
- "primitive-types",
- "rand 0.7.3",
- "regex",
- "scale-info",
- "schnorrkel",
- "secp256k1",
- "secrecy",
- "serde",
- "sp-core-hashing 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-debug-derive 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime-interface 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-storage 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core-hashing",
+ "sp-debug-derive",
+ "sp-externalities",
+ "sp-runtime-interface",
+ "sp-std",
+ "sp-storage",
  "ss58-registry",
  "substrate-bip39",
  "thiserror",
@@ -7170,66 +6432,32 @@ dependencies = [
 [[package]]
 name = "sp-core-hashing"
 version = "4.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "blake2 0.10.4",
  "byteorder",
  "digest 0.10.3",
  "sha2 0.10.2",
  "sha3 0.10.1",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "twox-hash",
-]
-
-[[package]]
-name = "sp-core-hashing"
-version = "4.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "blake2 0.10.4",
- "byteorder",
- "digest 0.10.3",
- "sha2 0.10.2",
- "sha3 0.10.1",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-std",
  "twox-hash",
 ]
 
 [[package]]
 name = "sp-core-hashing-proc-macro"
 version = "5.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "proc-macro2",
  "quote",
- "sp-core-hashing 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "syn",
-]
-
-[[package]]
-name = "sp-core-hashing-proc-macro"
-version = "5.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "proc-macro2",
- "quote",
- "sp-core-hashing 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core-hashing",
  "syn",
 ]
 
 [[package]]
 name = "sp-database"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "kvdb",
- "parking_lot 0.12.0",
-]
-
-[[package]]
-name = "sp-database"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "kvdb",
  "parking_lot 0.12.0",
@@ -7238,17 +6466,7 @@ dependencies = [
 [[package]]
 name = "sp-debug-derive"
 version = "4.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
-name = "sp-debug-derive"
-version = "4.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -7258,93 +6476,50 @@ dependencies = [
 [[package]]
 name = "sp-externalities"
 version = "0.12.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "environmental",
  "parity-scale-codec",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-storage 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sp-externalities"
-version = "0.12.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "environmental",
- "parity-scale-codec",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-storage 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-std",
+ "sp-storage",
 ]
 
 [[package]]
 name = "sp-finality-grandpa"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "finality-grandpa",
  "log",
  "parity-scale-codec",
  "scale-info",
  "serde",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-application-crypto 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-keystore 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sp-finality-grandpa"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "finality-grandpa",
- "log",
- "parity-scale-codec",
- "scale-info",
- "serde",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-application-crypto 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-keystore 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-application-crypto",
+ "sp-core",
+ "sp-keystore",
+ "sp-runtime",
+ "sp-std",
 ]
 
 [[package]]
 name = "sp-inherents"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "async-trait",
  "impl-trait-for-tuples",
  "parity-scale-codec",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
-]
-
-[[package]]
-name = "sp-inherents"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "async-trait",
- "impl-trait-for-tuples",
- "parity-scale-codec",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-runtime",
+ "sp-std",
  "thiserror",
 ]
 
 [[package]]
 name = "sp-io"
 version = "6.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "futures 0.3.21",
  "hash-db",
@@ -7353,40 +6528,15 @@ dependencies = [
  "parity-scale-codec",
  "parking_lot 0.12.0",
  "secp256k1",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-keystore 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime-interface 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-tracing 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-trie 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-wasm-interface 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "tracing",
- "tracing-core",
-]
-
-[[package]]
-name = "sp-io"
-version = "6.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "futures 0.3.21",
- "hash-db",
- "libsecp256k1",
- "log",
- "parity-scale-codec",
- "parking_lot 0.12.0",
- "secp256k1",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-keystore 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime-interface 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-state-machine 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-tracing 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-trie 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-wasm-interface 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-externalities",
+ "sp-keystore",
+ "sp-runtime-interface",
+ "sp-state-machine",
+ "sp-std",
+ "sp-tracing",
+ "sp-trie",
+ "sp-wasm-interface",
  "tracing",
  "tracing-core",
 ]
@@ -7394,18 +6544,18 @@ dependencies = [
 [[package]]
 name = "sp-keyring"
 version = "6.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "lazy_static",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sp-core",
+ "sp-runtime",
  "strum",
 ]
 
 [[package]]
 name = "sp-keystore"
 version = "0.12.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "async-trait",
  "futures 0.3.21",
@@ -7414,41 +6564,15 @@ dependencies = [
  "parking_lot 0.12.0",
  "schnorrkel",
  "serde",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
-]
-
-[[package]]
-name = "sp-keystore"
-version = "0.12.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "async-trait",
- "futures 0.3.21",
- "merlin",
- "parity-scale-codec",
- "parking_lot 0.12.0",
- "schnorrkel",
- "serde",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-externalities",
  "thiserror",
 ]
 
 [[package]]
 name = "sp-maybe-compressed-blob"
 version = "4.1.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "thiserror",
- "zstd",
-]
-
-[[package]]
-name = "sp-maybe-compressed-blob"
-version = "4.1.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "thiserror",
  "zstd",
@@ -7457,37 +6581,17 @@ dependencies = [
 [[package]]
 name = "sp-offchain"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sp-offchain"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-core",
+ "sp-runtime",
 ]
 
 [[package]]
 name = "sp-panic-handler"
 version = "4.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "backtrace",
- "lazy_static",
- "regex",
-]
-
-[[package]]
-name = "sp-panic-handler"
-version = "4.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "backtrace",
  "lazy_static",
@@ -7497,27 +6601,17 @@ dependencies = [
 [[package]]
 name = "sp-rpc"
 version = "6.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "rustc-hash",
  "serde",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sp-rpc"
-version = "6.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "rustc-hash",
- "serde",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
 ]
 
 [[package]]
 name = "sp-runtime"
 version = "6.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "either",
  "hash256-std-hasher",
@@ -7529,85 +6623,34 @@ dependencies = [
  "rand 0.7.3",
  "scale-info",
  "serde",
- "sp-application-crypto 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-arithmetic 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sp-runtime"
-version = "6.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "either",
- "hash256-std-hasher",
- "impl-trait-for-tuples",
- "log",
- "parity-scale-codec",
- "parity-util-mem",
- "paste",
- "rand 0.7.3",
- "scale-info",
- "serde",
- "sp-application-crypto 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-arithmetic 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-application-crypto",
+ "sp-arithmetic",
+ "sp-core",
+ "sp-io",
+ "sp-std",
 ]
 
 [[package]]
 name = "sp-runtime-interface"
 version = "6.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "impl-trait-for-tuples",
  "parity-scale-codec",
  "primitive-types",
- "sp-externalities 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime-interface-proc-macro 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-storage 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-tracing 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-wasm-interface 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "static_assertions",
-]
-
-[[package]]
-name = "sp-runtime-interface"
-version = "6.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "impl-trait-for-tuples",
- "parity-scale-codec",
- "primitive-types",
- "sp-externalities 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime-interface-proc-macro 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-storage 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-tracing 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-wasm-interface 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-externalities",
+ "sp-runtime-interface-proc-macro",
+ "sp-std",
+ "sp-storage",
+ "sp-tracing",
+ "sp-wasm-interface",
  "static_assertions",
 ]
 
 [[package]]
 name = "sp-runtime-interface-proc-macro"
 version = "5.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "Inflector",
- "proc-macro-crate 1.1.3",
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
-name = "sp-runtime-interface-proc-macro"
-version = "5.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "Inflector",
  "proc-macro-crate 1.1.3",
@@ -7619,16 +6662,7 @@ dependencies = [
 [[package]]
 name = "sp-serializer"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "serde",
- "serde_json",
-]
-
-[[package]]
-name = "sp-serializer"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "serde",
  "serde_json",
@@ -7637,57 +6671,32 @@ dependencies = [
 [[package]]
 name = "sp-session"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-staking 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sp-session"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "parity-scale-codec",
- "scale-info",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-staking 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-core",
+ "sp-runtime",
+ "sp-staking",
+ "sp-std",
 ]
 
 [[package]]
 name = "sp-staking"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "parity-scale-codec",
  "scale-info",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sp-staking"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "parity-scale-codec",
- "scale-info",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-runtime",
+ "sp-std",
 ]
 
 [[package]]
 name = "sp-state-machine"
 version = "0.12.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "hash-db",
  "log",
@@ -7696,33 +6705,11 @@ dependencies = [
  "parking_lot 0.12.0",
  "rand 0.7.3",
  "smallvec",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-panic-handler 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-trie 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
- "tracing",
- "trie-root",
-]
-
-[[package]]
-name = "sp-state-machine"
-version = "0.12.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "hash-db",
- "log",
- "num-traits",
- "parity-scale-codec",
- "parking_lot 0.12.0",
- "rand 0.7.3",
- "smallvec",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-panic-handler 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-trie 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-externalities",
+ "sp-panic-handler",
+ "sp-std",
+ "sp-trie",
  "thiserror",
  "tracing",
  "trie-root",
@@ -7731,116 +6718,57 @@ dependencies = [
 [[package]]
 name = "sp-std"
 version = "4.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-
-[[package]]
-name = "sp-std"
-version = "4.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 
 [[package]]
 name = "sp-storage"
 version = "6.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "impl-serde",
  "parity-scale-codec",
  "ref-cast",
  "serde",
- "sp-debug-derive 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sp-storage"
-version = "6.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "impl-serde",
- "parity-scale-codec",
- "ref-cast",
- "serde",
- "sp-debug-derive 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-debug-derive",
+ "sp-std",
 ]
 
 [[package]]
 name = "sp-tasks"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "log",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime-interface 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sp-tasks"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "log",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-externalities 0.12.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-io 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime-interface 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-externalities",
+ "sp-io",
+ "sp-runtime-interface",
+ "sp-std",
 ]
 
 [[package]]
 name = "sp-timestamp"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "async-trait",
  "futures-timer",
  "log",
  "parity-scale-codec",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
-]
-
-[[package]]
-name = "sp-timestamp"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "async-trait",
- "futures-timer",
- "log",
- "parity-scale-codec",
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-inherents",
+ "sp-runtime",
+ "sp-std",
  "thiserror",
 ]
 
 [[package]]
 name = "sp-tracing"
 version = "5.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "parity-scale-codec",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "tracing",
- "tracing-core",
- "tracing-subscriber",
-]
-
-[[package]]
-name = "sp-tracing"
-version = "5.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "parity-scale-codec",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-std",
  "tracing",
  "tracing-core",
  "tracing-subscriber",
@@ -7849,64 +6777,39 @@ dependencies = [
 [[package]]
 name = "sp-transaction-pool"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
-]
-
-[[package]]
-name = "sp-transaction-pool"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "sp-api 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-api",
+ "sp-runtime",
 ]
 
 [[package]]
 name = "sp-transaction-storage-proof"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "async-trait",
  "log",
  "parity-scale-codec",
  "scale-info",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-inherents 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-trie 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sp-core",
+ "sp-inherents",
+ "sp-runtime",
+ "sp-std",
+ "sp-trie",
 ]
 
 [[package]]
 name = "sp-trie"
 version = "6.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "hash-db",
  "memory-db",
  "parity-scale-codec",
  "scale-info",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
- "trie-db",
- "trie-root",
-]
-
-[[package]]
-name = "sp-trie"
-version = "6.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "hash-db",
- "memory-db",
- "parity-scale-codec",
- "scale-info",
- "sp-core 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core",
+ "sp-std",
  "thiserror",
  "trie-db",
  "trie-root",
@@ -7915,52 +6818,24 @@ dependencies = [
 [[package]]
 name = "sp-version"
 version = "5.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "impl-serde",
  "parity-scale-codec",
  "parity-wasm 0.42.2",
  "scale-info",
  "serde",
- "sp-core-hashing-proc-macro 5.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-version-proc-macro 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "thiserror",
-]
-
-[[package]]
-name = "sp-version"
-version = "5.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "impl-serde",
- "parity-scale-codec",
- "parity-wasm 0.42.2",
- "scale-info",
- "serde",
- "sp-core-hashing-proc-macro 5.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "sp-version-proc-macro 4.0.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-core-hashing-proc-macro",
+ "sp-runtime",
+ "sp-std",
+ "sp-version-proc-macro",
  "thiserror",
 ]
 
 [[package]]
 name = "sp-version-proc-macro"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "parity-scale-codec",
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
-name = "sp-version-proc-macro"
-version = "4.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "parity-scale-codec",
  "proc-macro2",
@@ -7971,26 +6846,14 @@ dependencies = [
 [[package]]
 name = "sp-wasm-interface"
 version = "6.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "impl-trait-for-tuples",
  "log",
  "parity-scale-codec",
- "sp-std 4.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sp-std",
  "wasmi",
  "wasmtime",
-]
-
-[[package]]
-name = "sp-wasm-interface"
-version = "6.0.0"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
-dependencies = [
- "impl-trait-for-tuples",
- "log",
- "parity-scale-codec",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate.git?branch=master)",
- "wasmi",
 ]
 
 [[package]]
@@ -8083,7 +6946,7 @@ dependencies = [
 [[package]]
 name = "substrate-build-script-utils"
 version = "3.0.0"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "platforms",
 ]
@@ -8091,42 +6954,29 @@ dependencies = [
 [[package]]
 name = "substrate-frame-rpc-system"
 version = "4.0.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
- "frame-system-rpc-runtime-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "frame-system-rpc-runtime-api",
  "futures 0.3.21",
  "jsonrpc-core",
  "jsonrpc-core-client",
  "jsonrpc-derive",
  "log",
  "parity-scale-codec",
- "sc-client-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-rpc-api 0.10.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sc-transaction-pool-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-api 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-block-builder 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-blockchain 4.0.0-dev (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-core 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
- "sp-runtime 6.0.0 (git+https://github.com/nathanwhit/substrate.git?branch=master)",
+ "sc-client-api",
+ "sc-rpc-api",
+ "sc-transaction-pool-api",
+ "sp-api",
+ "sp-block-builder",
+ "sp-blockchain",
+ "sp-core",
+ "sp-runtime",
 ]
 
 [[package]]
 name = "substrate-prometheus-endpoint"
 version = "0.10.0-dev"
-source = "git+https://github.com/nathanwhit/substrate.git?branch=master#77c15d2546276a865b6e8f1c5d4b1d0ec1961e72"
-dependencies = [
- "futures-util",
- "hyper",
- "log",
- "prometheus",
- "thiserror",
- "tokio",
-]
-
-[[package]]
-name = "substrate-prometheus-endpoint"
-version = "0.10.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "futures-util",
  "hyper",
@@ -8139,12 +6989,12 @@ dependencies = [
 [[package]]
 name = "substrate-wasm-builder"
 version = "5.0.0-dev"
-source = "git+https://github.com/paritytech/substrate.git?branch=master#666f39b8a22108f57732215de006518738034ba2"
+source = "git+https://github.com/nathanwhit/substrate.git?branch=creditcoin#666f39b8a22108f57732215de006518738034ba2"
 dependencies = [
  "ansi_term",
  "build-helper",
  "cargo_metadata",
- "sp-maybe-compressed-blob 4.1.0-dev (git+https://github.com/paritytech/substrate.git?branch=master)",
+ "sp-maybe-compressed-blob",
  "strum",
  "tempfile",
  "toml",

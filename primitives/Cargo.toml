@@ -11,3 +11,8 @@ edition = "2021"
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
 branch = 'creditcoin'
+
+[dependencies.sp-runtime]
+default-features = false
+git = 'https://github.com/nathanwhit/substrate.git'
+branch = 'creditcoin'
