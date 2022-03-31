@@ -16,3 +16,7 @@ branch = 'creditcoin'
 default-features = false
 git = 'https://github.com/nathanwhit/substrate.git'
 branch = 'creditcoin'
+
+[features]
+default = ["std"]
+std = ["sp-core/std", "sp-runtime/std"]
