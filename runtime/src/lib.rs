@@ -200,7 +200,7 @@ impl frame_system::Config for Runtime {
 }
 
 parameter_types! {
-	pub const MinimumPeriod: u64 = 1000;
+	pub const MinimumPeriod: u64 = 500;
 }
 
 impl pallet_timestamp::Config for Runtime {

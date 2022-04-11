@@ -313,8 +313,8 @@ pub fn new_full(
 				let timestamp = sp_timestamp::InherentDataProvider::from_system_time();
 				Ok(timestamp)
 			},
-			Duration::from_secs(10),
-			Duration::from_secs(10),
+			Duration::from_secs(1),
+			Duration::from_secs(1),
 			can_author_with,
 		);
 

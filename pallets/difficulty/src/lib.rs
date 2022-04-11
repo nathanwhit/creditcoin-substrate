@@ -177,11 +177,12 @@ where
 	let oldest = &previous[0];
 	let newest = &previous[1];
 
-	let t = target_time.saturated_into::<i64>() / 1000;
+	let t = target_time.saturated_into::<i64>();
 	log::debug!("t = {}", t);
 	let solve_time = (newest.timestamp.saturated_into::<i64>()
-		- oldest.timestamp.saturated_into::<i64>())
-		/ 1000;
+		- oldest.timestamp.saturated_into::<i64>());
+
+	let solve_time = if solve_time == 0 { 1 } else { solve_time };
 
 	log::debug!("solve time = {}", solve_time);
 	let solve_time = i64::max(-5 * t, i64::min(solve_time, 6 * t));
