@@ -17,7 +17,7 @@ jobs:
           chain: ${{ matrix.chain }}
           runtime_dir: runtime
           package: creditcoin-node-runtime
-          workdir: $GITHUB_WORKSPACE
+          workdir: ${ github.workspace }
       - name: Summary
         run: |
           echo '${{ steps.srtool_build.outputs.json }}' | jq . > ${{ matrix.chain }}-srtool-digest.json
