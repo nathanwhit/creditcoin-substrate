@@ -16,6 +16,7 @@ jobs:
         with:
           chain: ${{ matrix.chain }}
           runtime_dir: runtime
+          package: creditcoin-node-runtime
       - name: Summary
         run: |
           echo '${{ steps.srtool_build.outputs.json }}' | jq . > ${{ matrix.chain }}-srtool-digest.json
