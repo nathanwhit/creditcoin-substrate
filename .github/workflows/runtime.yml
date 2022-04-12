@@ -28,5 +28,5 @@ jobs:
         with:
           name: ${{ matrix.chain }}-runtime-${{ github.sha }}
           path: |
-            ${{ steps.srtool_build.outputs.wasm }}
+            ${{ steps.srtool_build.outputs.wasm_compressed }}
             ${{ matrix.chain }}-srtool-digest.json
