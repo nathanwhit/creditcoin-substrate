@@ -35,6 +35,9 @@ pub mod pallet {
 
 	use crate::DifficultyAndTimestamp;
 
+	use core::convert::TryInto;
+
+
 	#[pallet::config]
 	pub trait Config: frame_system::Config {
 		type Moment: Parameter

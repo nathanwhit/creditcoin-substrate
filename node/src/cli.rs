@@ -1,5 +1,5 @@
-use sc_cli::RunCmd;
-use structopt::StructOpt;
+use clap::Parser;
+use sc_cli::{clap, RunCmd};
 
 fn parse_rpc_pair(input: &str) -> Result<(String, String), String> {
 	let (name, uri) = input
@@ -36,28 +36,29 @@ mod parse_tests {
 	}
 }
 
-#[derive(Debug, StructOpt)]
+#[derive(Debug, Parser)]
 pub struct Cli {
-	#[structopt(subcommand)]
+	#[clap(subcommand)]
 	pub subcommand: Option<Subcommand>,
 
-	#[structopt(flatten)]
+	#[clap(flatten)]
 	pub run: RunCmd,
 
-	#[structopt(long)]
+	#[clap(long)]
 	/// The public key or SS58 Address of the account to receive mining rewards in.
 	pub mining_key: Option<String>,
 
-	#[structopt(long)]
+	#[clap(long)]
 	/// The number of mining worker threads to spawn. Defaults to the number of cores if omitted.
 	pub mining_threads: Option<usize>,
 
-	#[structopt(long, parse(try_from_str = parse_rpc_pair))]
+	#[clap(long, parse(try_from_str = parse_rpc_pair))]
 	/// If the node is an oracle authority, the RPC URL to use for a given external chain.
 	pub rpc_mapping: Option<Vec<(String, String)>>,
 }
-#[derive(Debug, StructOpt)]
+#[derive(Debug, Parser)]
 pub enum Subcommand {
+	#[clap(subcommand)]
 	/// Key management cli utilities
 	Key(sc_cli::KeySubcommand),
 
@@ -83,6 +84,8 @@ pub enum Subcommand {
 	Revert(sc_cli::RevertCmd),
 
 	/// The custom benchmark subcommand benchmarking runtime pallets.
-	#[structopt(name = "benchmark", about = "Benchmark runtime pallets.")]
+	///
+	#[clap(name = "benchmark", about = "Benchmark runtime pallets.")]
+	#[clap(subcommand)]
 	Benchmark(frame_benchmarking_cli::BenchmarkCmd),
 }

@@ -8,16 +8,16 @@ edition = "2021"
 [dependencies]
 
 [dependencies.substrate-prometheus-endpoint]
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = "0.10.0-dev"
+git = "https://github.com/paritytech/substrate.git"
+
 optional = true
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-core]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.1.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [features]
 default = ["std", "prometheus"]

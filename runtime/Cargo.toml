@@ -3,7 +3,7 @@ name = 'creditcoin-node-runtime'
 version = '2.0.0-beta.6'
 description = 'Creditcoin runtime built on substrate.'
 authors = ['Gluwa Inc.', 'Nathan Whitaker <nathan.whitaker@gluwa.com>']
-edition = '2018'
+edition = '2021'
 license = 'Unlicense'
 publish = false
 repository = 'https://github.com/gluwa/creditcoin-substrate'
@@ -35,164 +35,164 @@ path = '../pallets/creditcoin'
 version = '2.0.0-beta.6'
 
 [build-dependencies.substrate-wasm-builder]
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
+git = "https://github.com/paritytech/substrate.git"
 version = '5.0.0-dev'
+branch = "polkadot-v0.9.19"
 
 [dependencies.codec]
 default-features = false
 features = ['derive']
-package = 'parity-scale-codec'
-version = '2.0.0'
+package = "parity-scale-codec"
+version = "3.1.2"
 
 [dependencies.frame-benchmarking]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
+git = "https://github.com/paritytech/substrate.git"
 optional = true
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.frame-executive]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.frame-support]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.frame-system]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.frame-system-benchmarking]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
+git = "https://github.com/paritytech/substrate.git"
 optional = true
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.frame-system-rpc-runtime-api]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.hex-literal]
 optional = true
-version = '0.3.1'
+version = "0.3.4"
 
 [dependencies.pallet-balances]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.pallet-randomness-collective-flip]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.pallet-sudo]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.pallet-timestamp]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.pallet-transaction-payment]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.pallet-transaction-payment-rpc-runtime-api]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.scale-info]
 default-features = false
 features = ['derive']
-version = '1.0'
+version = "2.1.1"
 
 [dependencies.sp-api]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-block-builder]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-consensus-pow]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '0.10.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-core]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.1.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-inherents]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-offchain]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-runtime]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.1.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-session]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-std]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-transaction-pool]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-version]
 default-features = false
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [features]
 default = ['std']

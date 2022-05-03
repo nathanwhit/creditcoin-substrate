@@ -8,7 +8,7 @@ use jsonrpc_derive::rpc;
 use jsonrpc_pubsub::{
 	manager::SubscriptionManager, typed::Subscriber, PubSubMetadata, SubscriptionId,
 };
-use sc_client_api::{BlockchainEvents, StorageKey};
+use sc_client_api::{notifications::StorageNotification, BlockchainEvents, StorageKey};
 use sp_api::{BlockId, ProvideRuntimeApi, StateBackend};
 use sp_blockchain::HeaderBackend;
 use sp_core::H256;
@@ -154,7 +154,7 @@ where
 				},
 			};
 		let stream =
-			stream.map(move |(_block, changes)| -> Result<RpcResult<Vec<friendly::Event>>, ()> {
+			stream.map(move |StorageNotification { changes, .. }| -> Result<RpcResult<Vec<friendly::Event>>, ()> {
 				let mut events = Vec::new();
 				for (_, _, data) in changes.iter() {
 					if let Some(sc_client_api::StorageData(data)) = data {

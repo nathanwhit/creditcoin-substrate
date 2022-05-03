@@ -1,36 +1,35 @@
 [package]
 name = "creditcoin-node-rpc"
 version = "2.0.0-beta.6"
-edition = "2018"
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-codec = { package = "parity-scale-codec", version = "2.3.1" }
+codec = { package = "parity-scale-codec", version = "3.1.2" }
 hex = "0.4.3"
 jsonrpc-core = "18.0.0"
 jsonrpc-core-client = "18.0.0"
 jsonrpc-derive = "18.0.0"
-log = "0.4.16"
+log = "0.4.17"
 pallet-creditcoin = { path = "../../pallets/creditcoin" }
 pallet-rewards = { path = "../../pallets/rewards" }
 primitives = { path = "../../primitives", features = ["std", "prometheus"] }
 serde = { version = "1.0.137", features = ["derive"] }
 serde_json = "1.0.80"
 
-
-sp-api = { version = "4.0.0-dev", git = 'https://github.com/gluwa/substrate.git', rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8' }
-sp-blockchain = { version = "4.0.0-dev", git = 'https://github.com/gluwa/substrate.git', rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8' }
-sp-core = { version = "4.1.0-dev", git = 'https://github.com/gluwa/substrate.git', rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8' }
-sp-rpc = { version = "4.0.0-dev", git = 'https://github.com/gluwa/substrate.git', rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8' }
-sp-runtime = { version = "4.1.0-dev", git = 'https://github.com/gluwa/substrate.git', rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8' }
-sp-state-machine = { version = "0.10.0-dev", git = 'https://github.com/gluwa/substrate.git', rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8' }
-sc-rpc = { version = "4.0.0-dev", git = 'https://github.com/gluwa/substrate.git', rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8' }
-sc-client-api = { version = "4.0.0-dev", git = 'https://github.com/gluwa/substrate.git', rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8' }
-frame-system = { git = 'https://github.com/gluwa/substrate.git', rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8', version = '4.0.0-dev' }
-frame-support = { git = 'https://github.com/gluwa/substrate.git', rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8', version = '4.0.0-dev' }
-pallet-balances = { git = 'https://github.com/gluwa/substrate.git', rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8', version = '4.0.0-dev' }
-pallet-timestamp = { git = 'https://github.com/gluwa/substrate.git', rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8', version = '4.0.0-dev' }
+sp-api = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }
+sp-blockchain = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }
+sp-core = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }
+sp-rpc = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }
+sp-runtime = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }
+sp-state-machine = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }
+sc-rpc = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }
+sc-client-api = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }
+frame-system = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }
+frame-support = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }
+pallet-balances = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }
+pallet-timestamp = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19" }
 creditcoin-node-runtime = { version = "2.0.0-beta.6", path = "../../runtime" }
 jsonrpc-pubsub = "18.0.0"
 futures = "0.3.21"

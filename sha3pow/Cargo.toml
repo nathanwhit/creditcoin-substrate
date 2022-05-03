@@ -6,43 +6,43 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-parity-scale-codec = "2.3.1"
-rand = { version = "0.8.4", features = ["small_rng"] }
-sha3 = "0.9.1"
-scale-info = "1.0.0"
+parity-scale-codec = "3.1.2"
+rand = { version = "0.8.5", features = ["small_rng"] }
+sha3 = "0.10.1"
+scale-info = "2.1.1"
 primitives = { path = "../primitives" }
 
 [dependencies.sc-consensus-pow]
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '0.10.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sc-keystore]
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sc-client-api]
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-api]
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-consensus-pow]
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '0.10.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-application-crypto]
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.0.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"
 
 [dependencies.sp-core]
-git = 'https://github.com/gluwa/substrate.git'
-rev = '57cab2f30bcc5343771c8bc763dd6c9c9e10f0a8'
-version = '4.1.0-dev'
+git = "https://github.com/paritytech/substrate.git"
+
+branch = "polkadot-v0.9.19"

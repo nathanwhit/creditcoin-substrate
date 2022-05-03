@@ -1,5 +1,7 @@
 pub mod loan_terms;
 
+use core::convert::TryFrom;
+
 pub use loan_terms::*;
 
 use codec::{Decode, Encode, EncodeLike, FullCodec, MaxEncodedLen};
