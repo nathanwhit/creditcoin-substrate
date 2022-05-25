@@ -39,6 +39,8 @@ jobs:
 
       - uses: Swatinem/rust-cache@v1
         continue-on-error: true
+        with:
+          sharedKey: "bench"
 
       - name: Difficulty
         shell: bash
