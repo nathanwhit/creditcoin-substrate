@@ -55,7 +55,8 @@ jobs:
           override: true
           components: clippy
       - uses: Swatinem/rust-cache@v1
-
+        with:
+          sharedKey: "shared"
       - name: Run Clippy
         uses: actions-rs/cargo@v1
         with:
@@ -84,7 +85,8 @@ jobs:
           profile: minimal
           override: true
       - uses: Swatinem/rust-cache@v1
-
+        with:
+          sharedKey: "shared"
       - name: Check Build
         run: |
           SKIP_WASM_BUILD=1 cargo check --release
@@ -111,7 +113,6 @@ jobs:
           profile: minimal
           override: true
       - uses: Swatinem/rust-cache@v1
-
       - name: Configure flags for collecting coverage
         run: |
           echo "CARGO_INCREMENTAL=0" >> $GITHUB_ENV
@@ -157,7 +158,8 @@ jobs:
           profile: minimal
           override: true
       - uses: Swatinem/rust-cache@v1
-
+        with:
+          sharedKey: "shared"
       - name: Build SUT
         uses: actions-rs/cargo@v1
         with:
@@ -313,7 +315,8 @@ jobs:
           profile: minimal
           override: true
       - uses: Swatinem/rust-cache@v1
-
+        with:
+          sharedKey: "bench"
       - name: Build benchmarks
         uses: actions-rs/cargo@v1
         with:

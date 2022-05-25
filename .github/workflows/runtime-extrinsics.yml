@@ -35,6 +35,8 @@ jobs:
           profile: minimal
           override: true
       - uses: Swatinem/rust-cache@v1
+        with:
+          sharedKey: "shared"
 
       - name: Build Release
         uses: actions-rs/cargo@v1
