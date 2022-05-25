@@ -51,7 +51,7 @@ subcommands:
 
 ### Single-Node Development Chain
 
-This command will start the single-node development chain with persistent state:
+This command will start the single-node development chain with temporary state:
 
 ```bash
 ./target/release/creditcoin-node --dev --mining-key <your mining key>
