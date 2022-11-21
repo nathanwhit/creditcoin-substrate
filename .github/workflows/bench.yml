@@ -37,7 +37,7 @@ jobs:
           profile: minimal
           override: true
 
-      - uses: Swatinem/rust-cache@v1
+      - uses: Swatinem/rust-cache@v2
         continue-on-error: true
 
       - name: Difficulty
