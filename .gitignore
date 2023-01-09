@@ -19,3 +19,5 @@
 **/node_modules/
 *.tgz
 justfile
+
+docs/dev-guide/book
