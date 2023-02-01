@@ -21,7 +21,7 @@ ADD test /creditcoin-node/test
 RUN apt-get update && apt-get install -y protobuf-compiler
 RUN source ~/.cargo/env && cargo build --release
 
-FROM ubuntu:20.04
+FROM ubuntu:23.04
 EXPOSE 30333/tcp
 EXPOSE 30333/udp
 EXPOSE 9944 9933 9615
