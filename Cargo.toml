@@ -51,7 +51,7 @@ pallet-timestamp = { version = "4.0.0-dev", default-features = false, branch = "
 pallet-transaction-payment = { version = "4.0.0-dev", default-features = false, branch = "polkadot-v0.9.32", git = "https://github.com/paritytech/substrate.git" }
 pallet-transaction-payment-rpc = { version = "4.0.0-dev", branch = "polkadot-v0.9.32", git = "https://github.com/paritytech/substrate.git" }
 pallet-transaction-payment-rpc-runtime-api = { version = "4.0.0-dev", default-features = false, branch = "polkadot-v0.9.32", git = "https://github.com/paritytech/substrate.git" }
-parity-scale-codec = { version = "3.2.1", default-features = false, features = [
+parity-scale-codec = { version = "3.4.0", default-features = false, features = [
     "derive",
 ] }
 primitives = { version = "2.211.2", default-features = false, path = "primitives" }
