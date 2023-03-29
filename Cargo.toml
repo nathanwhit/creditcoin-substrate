@@ -11,6 +11,7 @@ members = [
     'pallets/offchain-task-scheduler/runtime-api',
     'pallets/offchain-task-scheduler',
     'pallets/staking',
+    'pallets/pos-switch',
     'runtime',
     "sha3pow",
     "primitives",
@@ -54,6 +55,7 @@ pallet-staking = { path = "pallets/staking", default-features = false }
 primitives = { path = "primitives", default-features = false }
 runtime-utils = { package = "test-runtime-utils", path = "test/runtime-utils", default-features = false }
 task-scheduler-runtime-api = { path = "pallets/offchain-task-scheduler/runtime-api", default-features = false }
+pallet-pos-switch = { path = "pallets/pos-switch", default-features = false }
 
 # Substrate Dependencies
 frame-benchmarking-cli = { branch = "polkadot-v0.9.38", git = "https://github.com/paritytech/substrate.git" }

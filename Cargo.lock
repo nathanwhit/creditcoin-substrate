@@ -1216,6 +1216,7 @@ dependencies = [
  "pallet-grandpa",
  "pallet-im-online",
  "pallet-offchain-task-scheduler",
+ "pallet-pos-switch",
  "pallet-randomness-collective-flip",
  "pallet-rewards",
  "pallet-scheduler",

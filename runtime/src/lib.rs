@@ -57,6 +57,7 @@ pub use frame_support::{
 	},
 	StorageValue,
 };
+pub use pallet_pos_switch;
 
 #[cfg(feature = "try-runtime")]
 use frame_support::traits::UpgradeCheckSelect;
@@ -601,6 +602,10 @@ impl pallet_rewards::Config for Runtime {
 	type WeightInfo = pallet_rewards::weights::WeightInfo<Runtime>;
 }
 
+impl pallet_pos_switch::Config for Runtime {
+	type RuntimeEvent = RuntimeEvent;
+}
+
 pub type SignedPayload = generic::SignedPayload<RuntimeCall, SignedExtra>;
 
 impl<LocalCall> frame_system::offchain::CreateSignedTransaction<LocalCall> for Runtime
@@ -655,6 +660,7 @@ construct_runtime!(
 	{
 		System: frame_system,
 		Timestamp: pallet_timestamp,
+		PosSwitch: pallet_pos_switch,
 		Babe: pallet_babe,
 		Balances: pallet_balances,
 		Authorship: pallet_authorship,
