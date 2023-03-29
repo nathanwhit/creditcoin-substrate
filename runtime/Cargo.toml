@@ -60,6 +60,7 @@ pallet-bags-list = { workspace = true }
 pallet-authorship = { workspace = true }
 sp-staking = { workspace = true }
 pallet-staking-reward-fn = { workspace = true }
+log = { workspace = true }
 
 [build-dependencies]
 substrate-wasm-builder = { workspace = true }
