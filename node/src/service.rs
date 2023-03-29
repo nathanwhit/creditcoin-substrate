@@ -466,7 +466,7 @@ impl<T: Init> LazyInit<T> {
 
 	pub async fn get_mut(&mut self) -> &mut T {
 		if self.inner.is_none() {
-			log::info!("Initializing LazyInit <{}>", std::any::type_name::<T>());
+			log::debug!("Initializing LazyInit <{}>", std::any::type_name::<T>());
 			let deps = self.deps.take().expect("LazyInit is initialized only once; qed");
 			self.inner = Some(T::init(deps).await);
 		}
@@ -499,7 +499,7 @@ fn grandpa_initializer(
 				match &grandpa_import {
 					Some(_) => {},
 					None => {
-						log::info!("Initializing Grandpa");
+						log::debug!("Initializing Grandpa");
 						let (import, link) = sc_finality_grandpa::block_import(
 							client.clone(),
 							&AuthoritiesProv,
@@ -510,7 +510,7 @@ fn grandpa_initializer(
 
 						grandpa_import = Some(import.clone());
 						grandpa_link = TakeOnce::Full(link);
-						log::info!("Notifying");
+						log::debug!("Notifying authorship switcher");
 						switch_notif.notify_one();
 					},
 				}
@@ -564,7 +564,7 @@ fn babe_import_initializer(
 				match &babe_import {
 					Some(_) => {},
 					None => {
-						log::info!("Initializing BabeImport");
+						log::debug!("Initializing BabeImport");
 						let grandpa_block_import = grandpa_init.request_import().await;
 						let babe_config = babe::configuration(&*client).unwrap();
 						let babe_config = if babe_config.authorities.is_empty() {
@@ -580,7 +580,7 @@ fn babe_import_initializer(
 						} else {
 							babe_config
 						};
-						log::info!("with babe config: {babe_config:?}");
+						log::debug!("with babe config: {babe_config:?}");
 						let (block_import, link) = babe::block_import(
 							babe_config.clone(),
 							grandpa_block_import,
@@ -710,7 +710,7 @@ where
 
 				let client = pow_params.client.clone();
 				if switched_to_pos(&client, client.chain_info().best_hash) {
-					log::info!("Already switched to PoS");
+					log::debug!("Already switched to PoS");
 					let babe_task_manager = TaskManager::new(tokio_handle.clone(), None).unwrap();
 					start_babe_authorship(&babe_task_manager, babe_params, is_authority).await;
 					std::future::pending::<()>().await;
@@ -720,7 +720,7 @@ where
 				let pow_task_manager = TaskManager::new(tokio_handle.clone(), None).unwrap();
 				let stopper = start_pow_authorship(&pow_task_manager, pow_params);
 
-				log::info!("Waiting to switch");
+				log::debug!("Waiting to switch");
 				loop {
 					let sleep = tokio::time::sleep(std::time::Duration::from_secs(6));
 					tokio::select! {
@@ -735,13 +735,13 @@ where
 					}
 				}
 
-				log::info!("Stopping PoW");
+				log::debug!("Stopping PoW");
 
 				stopper.stop();
 				drop(pow_task_manager);
 				let babe_task_manager = TaskManager::new(tokio_handle.clone(), None).unwrap();
 
-				log::info!("Starting Babe");
+				log::debug!("Starting Babe");
 				start_babe_authorship(&babe_task_manager, babe_params, is_authority).await;
 				std::future::pending::<()>().await;
 			}),
@@ -794,9 +794,9 @@ async fn start_babe_authorship(
 		);
 
 		let block_import = babe_link.request_import().await;
-		log::info!("got babe block import");
+		log::debug!("got babe block import");
 		let babe_link = babe_link.request_link().await;
-		log::info!("got babe link");
+		log::debug!("got babe link");
 		let slot_duration = babe_link.config().slot_duration();
 		let babe_config = babe::BabeParams {
 			keystore: keystore.clone(),
@@ -856,7 +856,7 @@ async fn start_babe_authorship(
 		shared_voter_state: SharedVoterState::empty(),
 		telemetry: None,
 	};
-	log::info!("starting grandpa voter");
+	log::debug!("starting grandpa voter");
 	// the GRANDPA voter task is considered infallible, i.e.
 	// if it fails we take down the service with it.
 	task_manager.spawn_essential_handle().spawn_blocking(
@@ -956,7 +956,7 @@ where
 					let metadata = worker.metadata();
 					let version = worker.version();
 					if stop.load(std::sync::atomic::Ordering::Relaxed) {
-						log::info!("Exiting mining thread");
+						log::debug!("Exiting mining thread");
 						break;
 					}
 					if let Some(metadata) = metadata {
@@ -1050,9 +1050,8 @@ where
 		&mut self,
 		block: BlockCheckParams<Block>,
 	) -> Result<sc_consensus::ImportResult, Self::Error> {
-		log::info!("check_block: #{:?}", block.number);
+		log::debug!("check_block: #{:?}", block.number);
 		if self.switched_to_pos(block.parent_hash) {
-			log::info!("check_block: switched to pos");
 			self.babe_import.get_mut().await.check_block(block).await
 		} else {
 			self.pow_import.check_block(block).await
@@ -1067,9 +1066,8 @@ where
 		block: BlockImportParams<Block, Self::Transaction>,
 		cache: HashMap<sp_consensus::CacheKeyId, Vec<u8>>,
 	) -> Result<sc_consensus::ImportResult, Self::Error> {
-		log::info!("import_block: #{:?}", block.header.number);
+		log::debug!("import_block: #{:?}", block.header.number);
 		if self.switched_to_pos(block.header.parent_hash) {
-			log::info!("import_block: switched to pos");
 			self.babe_import.get_mut().await.import_block(block, cache).await
 		} else {
 			self.pow_import.import_block(block, cache).await
