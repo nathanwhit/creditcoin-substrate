@@ -6,11 +6,16 @@ import { getStatus, requireStatus } from "../utils/status";
 
 export function makeUnbondCommand() {
   const cmd = new Command("unbond");
-  cmd.description("Schedule a portion of the stash to be unlocked");
-  cmd.option("-s, --seed [mnemonic]", "Specify mnemonic phrase to use");
+  cmd.description(
+    "Schedule a portion of the stash to be unlocked by the controller"
+  );
+  cmd.option(
+    "-s, --seed [mnemonic]",
+    "Specify controller mnemonic phrase to use"
+  );
   cmd.option(
     "-f, --file [file-name]",
-    "Specify file with mnemonic phrase to use"
+    "Specify controller file with mnemonic phrase to use"
   );
   cmd.option("-a, --amount [amount]", "Amount to send");
   cmd.action(unbondAction);
