@@ -26,8 +26,8 @@ async function withdrawUnbondedAction(options: OptionValues) {
   const slashingSpans = await api.query.staking.slashingSpans(
     stashAccount.address
   );
-  const slashingSpansCount = slashingSpans.toHuman()
-    ? slashingSpans.toHuman()
+  const slashingSpansCount = slashingSpans.isSome
+    ? slashingSpans.unwrap().lastNonzeroSlash
     : 0;
   const withdrawUnbondTx = api.tx.staking.withdrawUnbonded(slashingSpansCount);
   const hash = await withdrawUnbondTx.signAndSend(stashAccount);

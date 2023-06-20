@@ -39,7 +39,7 @@ async function setKeysAction(options: OptionValues) {
     keys = options.keys;
   }
 
-  const tx = api.tx.session.setKeys(keys, []);
+  const tx = api.tx.session.setKeys(keys, "");
   const hash = await tx.signAndSend(stash);
 
   console.log("Set keys transaction hash: " + hash.toHex());
