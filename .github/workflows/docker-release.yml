@@ -1,0 +1,32 @@
+---
+name: Build Docker Image
+
+on:
+  push:
+    tags:
+      - "*"
+
+permissions: read-all
+
+jobs:
+  docker-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Figure out tag name
+        shell: bash
+        run: |
+          TAG_NAME=$(git describe --tag)
+          echo "TAG_NAME=$TAG_NAME" >> "$GITHUB_ENV"
+
+      - name: Build docker image
+        run: |
+          docker build -t nathanwhit/creditcoin-fast-temp:${{ env.TAG_NAME }} .
+          docker tag gluwa/creditcoin:${{ env.TAG_NAME }} gluwa/creditcoin:latest
+
+          echo "${{ secrets.DOCKER_FAST_PUSH_PASSWORD }}" | docker login -u="${{ secrets.DOCKER_FAST_PUSH_USERNAME }}" --password-stdin
+          docker push nathanwhit/creditcoin-fast-temp:${{ env.TAG_NAME }}
+          docker logout
