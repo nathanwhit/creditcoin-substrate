@@ -29,7 +29,7 @@
     "@polkadot/typegen": "9.14.2",
     "@types/jest": "^29.0.0",
     "@types/prompts": "^2.4.4",
-    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
     "@typescript-eslint/parser": "^5.27.0",
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.5.0",
