@@ -35,7 +35,7 @@ RUN source ~/.cargo/env && \
     rustup update $RUSTC_VERSION && \
     rustup target add wasm32-unknown-unknown --toolchain $RUSTC_VERSION && \
     source ~/.cargo/env && \
-    cargo build --release
+    cargo build --release --features fast-runtime
 
 
 FROM devel-base AS cli-builder
