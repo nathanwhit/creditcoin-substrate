@@ -25,7 +25,6 @@ jobs:
       - name: Build docker image
         run: |
           docker build -t nathanwhit/creditcoin-fast-temp:${{ env.TAG_NAME }} .
-          docker tag gluwa/creditcoin:${{ env.TAG_NAME }} gluwa/creditcoin:latest
 
           echo "${{ secrets.DOCKER_FAST_PUSH_PASSWORD }}" | docker login -u="${{ secrets.DOCKER_FAST_PUSH_USERNAME }}" --password-stdin
           docker push nathanwhit/creditcoin-fast-temp:${{ env.TAG_NAME }}
