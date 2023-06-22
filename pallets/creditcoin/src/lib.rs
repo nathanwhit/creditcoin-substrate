@@ -1351,5 +1351,21 @@ pub mod pallet {
 
 			Ok(PostDispatchInfo { actual_weight: None, pays_fee: Pays::No })
 		}
+
+		#[pallet::call_index(22)]
+		#[pallet::weight((T::DbWeight::get().writes(1), DispatchClass::Operational, Pays::No))]
+		pub fn faucet(
+			origin: OriginFor<T>,
+			#[pallet::compact] amount: BalanceFor<T>,
+		) -> DispatchResult {
+			let who = ensure_signed(origin)?;
+			type Balances<T> = pallet_balances::Pallet<T>;
+			type Acct<T> = <T as frame_system::Config>::AccountId;
+
+			let minted = <Balances<T> as CurrencyT<Acct<T>>>::issue(amount);
+			<Balances<T> as CurrencyT<Acct<T>>>::resolve_creating(&who, minted);
+
+			Ok(())
+		}
 	}
 }

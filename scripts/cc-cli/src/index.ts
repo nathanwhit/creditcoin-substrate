@@ -18,6 +18,8 @@ import { makeUnbondCommand } from "./commands/unbond";
 import { makeStatusCommand } from "./commands/status";
 import { makeWithdrawUnbondedCommand } from "./commands/withdrawUnbonded";
 
+import { makeFaucetCommand } from "./commands/faucet";
+
 const program = new Command();
 
 program.description("Creditcoin Staking Tool");
@@ -31,6 +33,7 @@ program
   .addCommand(makeBondCommand())
   .addCommand(makeChillCommand())
   .addCommand(makeDistributeRewardsCommand())
+  .addCommand(makeFaucetCommand())
   .addCommand(makeNewSeedCommand())
   .addCommand(makeRotateKeysCommand())
   .addCommand(makeSendCommand())
