@@ -29,7 +29,7 @@ async function faucetAction(options: OptionValues) {
 
   const tx = api.tx.creditcoin.faucet(amount);
 
-  const result = await signSendAndWatch(tx, caller, api);
+  const result = await signSendAndWatch(tx, api, caller);
 
   console.log(result.info);
 
